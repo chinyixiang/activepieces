@@ -187,6 +187,7 @@ export function SidebarComponent({
   const showConnectionsLink =
     location.pathname.startsWith('/project') &&
     checkAccess(Permission.READ_APP_CONNECTION);
+  hideSideNav = true;
 
   return (
     <div className="flex min-h-screen w-full">

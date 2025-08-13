@@ -47,9 +47,10 @@ export const BuilderHeader = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const openNewWindow = useNewWindow();
-  const { data: showSupport } = flagsHooks.useFlag<boolean>(
-    ApFlagId.SHOW_COMMUNITY,
-  );
+  // const { data: showSupport } = flagsHooks.useFlag<boolean>(
+  //   ApFlagId.SHOW_COMMUNITY,
+  // );
+  const showSupport = false;
   const isInRunsPage = useMemo(
     () => location.pathname.includes('/runs'),
     [location.pathname],
